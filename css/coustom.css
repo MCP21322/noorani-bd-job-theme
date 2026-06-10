@@ -1,0 +1,1017 @@
+:root{
+    --primary-color: #003049;
+    --scendary-color: #219ebc;
+    --footer-text-color: white;
+    --black-color:black;
+    --text-color: black;
+    --white-color: #ffffff;
+    --font-size: 25px;
+}
+
+*, *::before *::after{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*excerpt read more button style start*/
+a.read_more {
+    margin-left: 10px;
+    text-decoration: none;
+    display: none;
+}
+
+/*excerpt read more button style end*/
+
+/*========top header css start hera=========*/
+div#header_area {
+    margin-bottom: 30px;
+}
+#header .top_header{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*========top header css end hera=========*/
+
+/*========logo area css=========*/
+div#menu_logo_area {
+    /* display: inline-block; */
+    margin-top: 15px;
+     display: flex;
+    align-items: center; /* লোগো ও মেনু লম্বালম্বিভাবে মাঝখানে থাকবে */
+    justify-content: space-between;
+}
+#menu_logo_area img {
+    display: block !important;
+    width: 100px !important;
+    max-width: 250px; 
+    height: auto !important;
+}
+/*========logo area css end hear=========*/
+/*========header ara nav css start here=========*/
+
+div#nav_area {
+    margin-left: 442px;
+}
+#nav {
+    list-style: none;
+    margin: -58px 109px;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    margin: 23px 0px;
+}
+
+#nav li {
+    position: relative; 
+    padding: 10px 15px;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color, #333);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#nav li a:hover {
+    color: var(--scendary-color, #007bff);
+}
+
+
+#nav ul#dropdown-menu, 
+#nav .sub-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    min-width: 200px;
+    background: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none; 
+    z-index: 999;
+}
+
+
+#nav ul li {
+    display: block;
+    width: 125%;
+    padding: 5px 20px;
+}
+
+#nav li:hover > ul#dropdown-menu,
+#nav li:hover > .sub-menu {
+    display: block;
+}
+
+#nav ul ul {
+    left: 100% !important;
+    top: 0 !important;
+}
+/*========header ara nav css end here=========*/
+/*========menu position css start here=========*/
+
+.left_menu .logo_col {
+    order: 2; 
+}
+
+.left_menu .menu_col {
+    order: 1; 
+}
+
+
+.right_menu .logo_col {
+    order: 1;
+}
+
+.right_menu .menu_col {
+    order: 2;
+}
+.left_menu #nav {
+    list-style: none;
+    margin: -58px 109px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin: -29px 1px;
+}
+.left_menu .logo_col img {
+    margin-left: 155px;
+}
+
+.center_menu .logo_col {
+    width: 100%; 
+}
+
+.center_menu .menu_col {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+/*========menu position css end here=========*/
+
+/*Footer area css here*/
+section#copy-write {
+    overflow: hidden;
+    background: var(--black-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section.footer {
+    background: #000000e0;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+section.footer li{
+    list-style: none;
+}
+section.footer li a{
+    text-decoration: none;
+ 
+}
+
+section.footer li a:hover{
+   transition: 0.5s;
+   background-color: var(--white-color);
+ 
+}
+
+
+/*Footer area css end here*/
+
+/*post thumbnail style start*/
+
+.noorani_post_thumbnail img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*post thumbnail style end*/
+
+/*pagination styele stard*/
+.custom-pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.page-numbers {
+    padding: 8px 15px;
+    background: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.page-numbers:hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+/* বর্তমান পেজের স্টাইল */
+.page-numbers.current {
+    background: #0073aa;
+    color: #fff;
+    cursor: default;
+}
+
+/*pagination styele end*/
+
+/*single post widget style start here*/
+/* widget style start here*/
+div#secandary {
+    background: #f5f5f5;
+    border: 1px solid #00000029;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+div#secondary input {
+    padding: 0px 0px;
+}
+div#secondary button {
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+}
+div#secandary label {
+    color: green;
+    font-size: 16px;
+}
+div#secondary button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+div#secondary input:focus {
+    outline: none;
+    border: 2px solid #343fdb; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+
+}
+
+/* widget style end here*/
+/*hme page widged area design start*/
+div#secandary button {
+    background-color: green;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+}
+div#secandary input {
+    width: 54%;
+}
+div#secondary label {
+    color: green;
+    font-size: 16px;
+}
+
+div#secandary button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+/*hme page wiged area design end*/
+
+
+/*single post wiget design start*/
+input#wp-block-search__input-1 {
+    width: 50%;
+}
+button.wp-block-search__button.wp-element-button {
+    margin-left: 10px;
+}
+/********single post wiget design end ********/
+
+
+/* footer widget style start*/
+/*quick link widget area style start here*/
+h2.wp-block-heading a {
+    text-decoration: none;
+    font-size: 16px;
+    color: green;
+}
+.col-md-4 a {
+    text-decoration: none;
+}
+h2.wp-block-heading {
+    color: green;
+}
+
+/*quick link widget area style end here*/
+section#block-14 ul li a img, svg {
+    width: 36px;
+    height: 34px;
+}
+section.footer li {
+    list-style: none;
+    background: none;
+    margin-left: 13px;
+}
+section.footer li a {
+    list-style: none;
+    background: none;
+    list-style: none;
+    color: white;
+}
+section#block-14 ul li a:hover {
+    background: none !important;
+}
+section.footer li a:hover {
+    background: none !important;
+    color: var(--scendary-color) !important;
+    transition: 0.5s;
+}
+
+li.wp-social-link.wp-social-link-facebook.wp-block-social-link {
+    display: block;
+    display: flex;
+    margin-left: -3px;
+}
+ul.wp-block-social-links.is-layout-flex.wp-block-social-links-is-layout-flex {
+    display: flex;
+}
+section#block-8 li a svg {
+    background: white;
+    border-radius: 8%;
+    color: black;
+    font-size: 33px;
+}
+section#block-8 li a svg:hover {
+    background: black;
+    border-radius: 8%;
+    color: white !important;
+    transition: 0.5s;
+
+}
+/* footer widget style end*/
+
+
+/*contact us page style start here*/
+.post_details_area label {
+    display: flex;
+}
+.post_details_area input {
+    margin-left: 153px;
+    justify-content: center;
+}
+.post_details_area h2 {
+    margin-bottom: 25px;
+}
+.post_details_area textarea {
+    margin-left: 52px;
+}
+/*contact us page style end here*/
+
+/*sign up pop up page style start here*/
+
+form.signup-modal-form input {
+    width: 100% !important;
+    margin-top: -7px;
+    font-size: 18px;
+}
+form.signup-modal-form input:focus{
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+}
+form.signup-modal-form input:focus {
+    border-color: #2d5a27; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(45, 90, 39, 0.2);
+}
+input#noorani_submit_signup {
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    width: 72% !important;
+}
+
+
+/* পপআপ ব্যাকগ্রাউন্ড (লুকানো থাকবে) */
+.modal {
+  display: block; 
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* কালো আবছা ভাব */
+}
+
+/* পপআপ বক্সের ডিজাইন */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* বন্ধ করার বাটন (Close Button) */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/*sign up pop up page style end here*/
+
+/*sign out button style start here*/
+#sign_up_form button {
+    margin-left: 788px;
+    background: red;
+    border-radius: 9px;
+    padding: 0px 15px;
+    font-size: 20px;
+    text-align: center;
+}
+#sign_up_form button a {
+    text-decoration: none;
+    color: white;
+    
+}
+#sign_up_form button:hover {
+   color: white;
+   background-color: black;
+   transition: 0.5s;
+}
+
+/*sign out button style end here*/
+
+
+/* job card style css start here*/
+div#blog_area {
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.post_details_area a {
+    font-size: 26px;
+    text-decoration: none;
+    color: #0073aa;
+    
+}
+/* job card style css end here*/
+/*custom post type page syle  start here
+'সকল চাকরী পেজ স্টাইল '
+*/
+
+.job-list-grid {
+    margin-top: 44px;
+}
+div#\ archive_job h1 {
+    border-bottom: 1px solid;
+    font-size: 31px;
+    padding-bottom: 25px;
+}
+/*custom post type page syle  end here '
+*/
+/*home page job card style star here*/
+div#colum-9 h1 {
+    border-bottom: 1px solid;
+    padding: 30px 0px;
+    font-size: 31px;
+}
+
+.job-listing-container {
+    margin-top: 50px;
+}
+.job-card:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+}
+/*home page job card style end here*/
+
+/*sign up button style start here*/
+.signup_area {
+    position: relative;
+    z-index: 99; 
+}
+.btn-signup {
+    background-color: #2d5a27; /* মাদ্রাসার সবুজ থিম */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    margin-left: -34px;
+}
+
+.btn-signup:hover {
+    background-color: #1e3d1a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px); 
+}
+
+
+.modal-content {
+    background-color: #fff;
+    margin: 8% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px; 
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.3s ease; /* জুম ইফেক্ট */
+}
+
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #888;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #d9534f;
+}
+
+
+.modal-content h2 {
+    text-align: center;
+    color: #2d5a27;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.modal-content p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal-content p a:hover {
+    text-decoration: underline;
+}
+
+form.signup-modal-form {
+    display: inline-grid;
+    margin-top: 0px;
+}
+
+/* animaton */
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+/*sing up button style end here*/
+
+
+/*log out button style start here*/
+
+/* button content style */
+button:has(.btn-logout) {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+/* log out link style */
+.btn-logout {
+    display: inline-block;
+    background-color: green; 
+    color: #ffffff !important;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/*hovet efect */
+.btn-logout:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+/*log out button style end here*/
+
+
+
+/*log in button and form style start here*/
+
+/* লগইন ফর্মের মেইন কন্টেইনার */
+#custom-login-form {
+    width: 100%;
+}
+
+#custom-login-form label {
+    display: inline-block;
+    margin-top: 20px;
+}
+#custom-login-form input#wp-submit {
+    margin-top: 7px;
+    background: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#custom-login-form input#wp-submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+
+}
+
+/* ইনপুট ফিল্ডগুলোর ডিজাইন */
+#custom-login-form input[type="text"], 
+#custom-login-form input[type="password"] {
+    width: 100% !important; 
+    padding: 12px 15px;      
+    margin-bottom: -31px;    
+    border: 1px solid #ddd; 
+    border-radius: 5px;     
+    font-size: 15px;
+    box-sizing: border-box; 
+    display: block;
+}
+
+/* ইনপুট ফিল্ডে ক্লিক করলে বর্ডারের রঙ পরিবর্তন (Focus Effect) */
+#custom-login-form input:focus {
+    border-color: #2d5a27; 
+    box-shadow: 0 0 5px rgba(45, 90, 39, 0.3);
+}
+
+/* সাবমিট (Login) বাটনের স্টাইল */
+#custom-login-form .submit input[type="submit"] {
+    width: 100%;           
+    background-color: #2d5a27;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#custom-login-form .submit input[type="submit"]:hover {
+    background-color: #1e3d1a;
+}
+
+/* log in button style */
+.btn-login {
+    position: relative;
+    z-index: 99; 
+}
+.login-trigger-area {
+    margin-top: -36px;
+}
+.btn-login {
+    background-color: #2d5a27; /* মাদ্রাসার সবুজ থিম */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: background 0.3s ease;
+    margin-left: 94px;
+    
+}
+
+.btn-login:hover {
+    background-color: #1e3d1a;
+    cursor: pointer;
+}
+
+/* ২. লগইন মোডাল ব্যাকগ্রাউন্ড (পুরো স্ক্রিন জুড়ে কালো ছায়া) */
+.login_modal {
+    display: none; /* শুরুতে লুকানো থাকবে */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* হালকা কালো স্বচ্ছ ব্যাকগ্রাউন্ড */
+    backdrop-filter: blur(4px); /* ব্যাকগ্রাউন্ড হালকা ঘোলা করবে */
+}
+
+/* ৩. মোডাল কন্টেন্ট বক্স (সাদা অংশ) */
+.login_modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px; /* বক্সের সাইজ */
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.4s ease; /* ওপর থেকে নিচে নামার এনিমেশন */
+}
+
+/* ৪. ক্লোজ (X) বাটন */
+.login_close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login_close-btn:hover {
+    color: #d9534f; /* হোভার করলে লাল হবে */
+}
+
+/* ৫. টাইটেল ও টেক্সট স্টাইল */
+.login_modal-content h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login_modal-content p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login_modal-content p a {
+    color: #2d5a27;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login_modal-content p a:hover {
+    text-decoration: underline;
+}
+
+/* ৬. এনিমেশন ইফেক্ট */
+@keyframes slideDown {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+/*log in button and form style end here*/
+
+/* user dessbord form style start here*/
+.job-form-wrapper input {
+    margin-left: -2px;
+    font-size: 16px;
+}
+.job-form-wrapper input {
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    border-radius: 4px;
+}
+.job-form-wrapper input:focus {
+    border-color: #2d5a27; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(45, 90, 39, 0.2);
+}
+
+.post_details_area textarea{
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    border-radius: 4px;
+}
+.post_details_area textarea:focus {
+    border-color: #2d5a27; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(45, 90, 39, 0.2);
+}
+.post_details_area {
+    width: 80% !important;
+}
+.post_details_area textarea {
+    margin-left: -1px;
+    margin-top: 22px;
+}
+input#noorani_job_submit {
+    background-color: green;
+    color: white;
+    border: black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input#noorani_job_submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
+}
+/* user dessbord form style end here*/
+
+/* user avartar profile syle start */
+.profile_wrapper {
+    display: flex;
+    /* margin-right: -90px; */
+}
+.user_profile_wrapper {
+    margin: -41px 0px;
+}
+.profile-img {
+    width: 50px !important;       
+    height: 50px !important;      
+    border-radius: 50% !important; 
+    object-fit: cover;            
+    border: 2px solid #2d5a27;    
+    display: inline-block;       
+    vertical-align: middle;      
+}
+
+#menu_logo_area img {
+    display: block !important;
+    width: 60px !important;
+    max-width: 250px;
+    height: auto !important;
+    margin-top: 36px;
+    margin-left: 15px;
+}
+/* user avartar profile syle end */
+
+/*comments area style start */
+p.comment-form-url {
+    display: none;
+}
+input#submit {
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.comments_area {
+    margin-top: 90px;
+}
+h3#reply-title {
+    color: green;
+    font-size: 26px;
+}
+input#submit:hover {
+    background: black;
+    transition: 0.5s;
+}
+/*comments area style end */
+
+
+/* blog post style strat here  */
+.blog-card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.blog-thumb img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+/*pagination style here*/
+nav.navigation.pagination {
+    text-align: center;
+    margin-left: 40%;
+}
+.pagination span, .pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+}
+.pagination .current {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+/* blog post style end here  */
+
+/*breadcrumb or page and post traker style strat here*/
+
+.breadcrumb-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+  
+}
+.breadcrumb-container a {
+    text-decoration: none;
+}
+
+/*breadcrumb or page and post traker style end here*/
+
+/* about us page style start here*/
+div#author_img {
+    margin-bottom: 86px;
+}
+div#author_img p {
+    text-align: center;
+}
+.wordpress-editor-content {
+    margin-bottom: 42px;
+    text-align: justify;
+    font-weight: bold;
+}
+/* about us page style end here*/
+
+
+/*responsive css start here*/
+@media only screen and (max-width: 575px) {
+    /*contact us page responsive css start here*/
+    #contact-form {
+        display: inline-grid;
+        margin-left: 103px;
+    }
+    /*about us page responsive css start here*/
+    div#teem_membur_picture1 {
+        margin-bottom: 63px;
+    }
+    /*Medium Devices */
+   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+       .col-md-3 {
+            flex: 0 0 auto;
+            width: 18%;
+        }
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 64%;
+        }
+    }
+    /*computer and large devices */
+    @media only screen and (min-width: 992px) {
+        
+    }
+}
+
+
+/*responsive css end here*/
