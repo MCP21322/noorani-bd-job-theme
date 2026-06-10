@@ -42,7 +42,10 @@ class noorani_all_data_validation{
                 $sanitize_data[$key] = sanitize_email($value);
             }elseif($key === 'user_message_area' || $key === 'message_area'){
                 $sanitize_data[$key] = sanitize_textarea_field($value);
-            }else{
+            }elseif($key === 'thumbnail' || $key === 'post_thumbnail'){
+                $sanitize_data[$key] = esc_url_raw($value);
+            }
+            else{
                 $sanitize_data[$key] = sanitize_text_field($value);
             }
         }

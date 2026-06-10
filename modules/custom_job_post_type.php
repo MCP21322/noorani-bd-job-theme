@@ -53,11 +53,26 @@ class job_post_endpoint_for_admin{
         register_rest_route('custom/v1', '/job-post', array(
             'methods' => 'POST',
             'callback' => array($this, 'handle_job_post_request_for_admin'),
-            'permission_callback' => function(){
-                return current_user_can('edit_posts');
-            }
+            'permission_callback' => array($this, 'job_post_endpoint_permission_check'),
         ));
     }
+// permission check for job post route
+    public function job_post_endpoint_permission_check($request){
+        $api_key = $request->get_header('x-api-key');
+        $secret_key = 'your_secret_key'; // Replace with your actual secret key
+        if(!empty($api_key) && $api_key === $secret_key){
+            return true;
+        }
+        if(is_user_logged_in() && current_user_can('manage_options')){
+            return true;
+        }
+        if(is_user_logged_in() && current_user_can('edit_posts')){
+            return true;
+        }
+        return WP_Error('forbidden', 'You do not have permission to access this endpoint', array('status' => 403));
+    }
+
+
     public function handle_job_post_request_for_admin(WP_REST_Request $request){
         $title = ( $request->get_param('title'));
         $content = ($request->get_param('content'));
