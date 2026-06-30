@@ -1,8 +1,8 @@
 <!-- log in HTML code start here -->
 <?php if(! is_user_logged_in()): ?>
-        <div class="login-trigger-area">
+        <!--<div class="login-trigger-area">-->
             <button id="loginBtn" class="btn-login">লগইন করুন</button>
-        </div>
+        <!--</div>-->
 
         <div id="loginModal" class="login_modal">
             <div class="login_modal-content">

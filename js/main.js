@@ -161,3 +161,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
 });
+
+
+
+//Mobail respons button toggle js here
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleBtn = document.querySelector('.menu-toggle-btn');
+    var menuWrapper = document.querySelector('.main-navigation-wrapper');
+
+    if (toggleBtn && menuWrapper) {
+        toggleBtn.addEventListener('click', function () {
+            // ক্লিক করলে 'show-menu' ক্লাস যোগ/বিয়োগ হবে
+            menuWrapper.classList.toggle('show-menu');
+        });
+    }
+});
+

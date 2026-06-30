@@ -12,9 +12,9 @@
     </div>
 
 <?php else : ?>
-    <div class="signup_area">
+    <!--<div class="signup_area">-->
         <button id="signupBtn" class="btn-signup">সাইন আপ</button>
-    </div>
+    <!--</div>-->
     
     <div id="signupModal" class="modal">
         <div class="modal-content">

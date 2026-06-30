@@ -114,7 +114,7 @@ class job_post_endpoint_for_admin{
 
 }
 
-
+$job_post_endpoint_for_admin = new job_post_endpoint_for_admin();
 
 
 
