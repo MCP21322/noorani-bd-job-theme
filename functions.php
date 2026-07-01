@@ -66,5 +66,8 @@ include_once('modules/data_base_table.php');
 // insert_contact_us_form_in_database function
 include_once('modules/insert_contact_us_form_in_database.php');
 
+// GitHub Update Checker for Custom WordPress Theme
+include_once('templet_part/github_update_checker.php');
+
 
 
